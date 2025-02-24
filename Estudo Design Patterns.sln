@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "..\Test\Runner.csproj", "{74C4D695-EC9F-488D-AC5C-C237372273A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csproj", "{74C4D695-EC9F-488D-AC5C-C237372273A2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{742334E0-C8D5-4C82-8BE5-E3C75A046655} = {742334E0-C8D5-4C82-8BE5-E3C75A046655}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "..\SharedLibrary\SharedLibrary.csproj", "{742334E0-C8D5-4C82-8BE5-E3C75A046655}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{742334E0-C8D5-4C82-8BE5-E3C75A046655}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{6D0FC8F6-D779-4BA4-9ED5-8D2107D83CBC}"
 EndProject
