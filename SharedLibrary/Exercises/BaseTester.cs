@@ -1,8 +1,11 @@
-﻿using Estudo_Design_Patterns.Exercises.Section_3___Factory;
-using Estudo_Design_Patterns.Exercises.Section_4___Prototype;
-using SharedLibrary.Exercises.Structural.Section_6___Adapter;
+﻿using SharedLibrary.Exercises._1___Creational.Section_2___Builder;
+using SharedLibrary.Exercises._1___Creational.Section_3___Factory;
+using SharedLibrary.Exercises._1___Creational.Section_4___Prototype;
+using SharedLibrary.Exercises._1___Creational.Section_5___Singleton;
+using SharedLibrary.Exercises._2___Structural.Section_6___Adapter;
+using SharedLibrary.Exercises._2___Structural.Section_7___Bridge;
 
-namespace Estudo_Design_Patterns
+namespace SharedLibrary
 {
     public class BaseTester
     {
@@ -14,7 +17,7 @@ namespace Estudo_Design_Patterns
             switch (testerNumber)
             {
                 case 2:
-                    tester = new FactoryTester();
+                    tester = new BuilderTester();
                     break;
                 case 3:
                     tester = new FactoryTester();
@@ -23,9 +26,13 @@ namespace Estudo_Design_Patterns
                     tester = new PrototypeTester();
                     break;
                 case 5:
-                    throw new NotImplementedException();
+                    tester = new SingletonTester();
+                    break;
                 case 6:
                     tester = new AdapterTester();
+                    break;
+                case 7:
+                    tester = new BridgeTester();
                     break;
                 default:
                     throw new NotImplementedException();

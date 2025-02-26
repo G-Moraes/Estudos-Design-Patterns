@@ -1,7 +1,7 @@
 ﻿using SharedLibrary.FileUtils;
 using SharedLibrary.TesterUtils;
 using SharedLibrary.JsonUtils;
-using Estudo_Design_Patterns;
+using SharedLibrary;
 
 public class Runner
 {

@@ -1,4 +1,4 @@
-﻿namespace Estudo_Design_Patterns.Exercises.Section_3___Factory
+﻿namespace SharedLibrary.Exercises._1___Creational.Section_3___Factory
 {
     class FactoryTester : BaseTester
     {

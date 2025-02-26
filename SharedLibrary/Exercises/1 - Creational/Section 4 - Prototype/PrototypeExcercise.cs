@@ -1,5 +1,9 @@
-﻿namespace Estudo_Design_Patterns.Exercises.Section_4____Prototype
+﻿namespace SharedLibrary.Exercises._1___Creational.Section_4___Prototype
 {
+    /*
+        Given the definitions above, you are asked to implement Line.DeepCopy() to perform a deep copy of the current Line  object.
+    */
+
     public interface ICopyable<T>
     {
         T DeepCopy();

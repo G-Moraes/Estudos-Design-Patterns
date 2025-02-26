@@ -1,6 +1,4 @@
-﻿using Estudo_Design_Patterns.Exercises.Section_4____Prototype;
-
-namespace Estudo_Design_Patterns.Exercises.Section_4___Prototype
+﻿namespace SharedLibrary.Exercises._1___Creational.Section_4___Prototype
 {
     public class PrototypeTester : BaseTester
     { 
