@@ -2,7 +2,7 @@
 {
     class FactoryTester : BaseTester
     {
-        public static void Test()
+        public override void Test()
         {
             PersonFactory pf = new PersonFactory();
 

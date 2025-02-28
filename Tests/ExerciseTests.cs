@@ -4,6 +4,7 @@ using SharedLibrary.Exercises._1___Creational.Section_4___Prototype;
 using SharedLibrary.Exercises._2___Structural.Section_7___Bridge;
 using SharedLibrary.Exercises._2___Structural.Section_6___Adapter;
 using static SharedLibrary.Exercises._1___Creational.Section_5___Singleton.SingletonExercise;
+using SharedLibrary.Exercises._2___Structural.Section_8___Composite;
 
 namespace Tests
 {
@@ -120,6 +121,25 @@ namespace Tests
             // Assert
             Assert.Equal("Drawing Triangle as lines", triangle.ToString());
             Assert.Equal("Drawing Square as lines", square.ToString());
+        }
+
+        // Composite
+        [Fact]
+        public void AssertCompositeTester()
+        {
+            // Arrange
+            SingleValue value1 = new SingleValue() { Value = 12 };
+
+            ManyValues manyValues = new ManyValues();
+
+            // Act
+            manyValues.Add(10);
+            manyValues.Add(17);
+            manyValues.Add(9);
+
+            // Assert
+            Assert.Equal(36, manyValues.Sum());
+            Assert.Equal(48, new List<IValueContainer> { value1, manyValues }.Sum());
         }
     }
 }
