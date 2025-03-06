@@ -1,4 +1,6 @@
-﻿namespace SharedLibrary.Exercises._1___Creational.Section_2___Builder
+﻿using Exercises;
+
+namespace Exercises._1___Creational.Section_2___Builder
 {
     public class BuilderTester : BaseTester
     {

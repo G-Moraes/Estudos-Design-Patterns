@@ -1,4 +1,4 @@
-﻿namespace SharedLibrary.Exercises._1___Creational.Section_3___Factory
+﻿namespace Exercises._1___Creational.Section_3___Factory
 {
     /*
      

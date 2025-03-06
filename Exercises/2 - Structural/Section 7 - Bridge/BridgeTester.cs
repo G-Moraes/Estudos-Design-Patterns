@@ -1,4 +1,6 @@
-﻿namespace SharedLibrary.Exercises._2___Structural.Section_7___Bridge
+﻿using Exercises;
+
+namespace Exercises._2___Structural.Section_7___Bridge
 {
     public class BridgeTester : BaseTester
     {

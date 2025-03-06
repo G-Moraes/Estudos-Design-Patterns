@@ -1,4 +1,6 @@
-﻿namespace SharedLibrary.Exercises._1___Creational.Section_3___Factory
+﻿using Exercises;
+
+namespace Exercises._1___Creational.Section_3___Factory
 {
     class FactoryTester : BaseTester
     {

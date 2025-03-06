@@ -1,10 +1,12 @@
-using SharedLibrary.Exercises._1___Creational.Section_2___Builder;
-using SharedLibrary.Exercises._1___Creational.Section_3___Factory;
-using SharedLibrary.Exercises._1___Creational.Section_4___Prototype;
-using SharedLibrary.Exercises._2___Structural.Section_7___Bridge;
-using SharedLibrary.Exercises._2___Structural.Section_6___Adapter;
-using static SharedLibrary.Exercises._1___Creational.Section_5___Singleton.SingletonExercise;
-using SharedLibrary.Exercises._2___Structural.Section_8___Composite;
+using Exercises._1___Creational.Section_2___Builder;
+using Exercises._1___Creational.Section_3___Factory;
+using Exercises._1___Creational.Section_4___Prototype;
+using static Exercises._1___Creational.Section_5___Singleton.SingletonExercise;
+using Exercises._2___Structural.Section_6___Adapter;
+using Exercises._2___Structural.Section_7___Bridge;
+using Exercises._2___Structural.Section_8___Composite;
+using Exercises._2___Structural.Section_9___Decorator;
+using Exercises._2___Structural.Section_10___Façade;
 
 namespace Tests
 {
@@ -87,7 +89,7 @@ namespace Tests
         public void AssertAdapterTester()
         {
             // Arrange
-            SharedLibrary.Exercises._2___Structural.Section_6___Adapter.Square square   = new SharedLibrary.Exercises._2___Structural.Section_6___Adapter.Square();
+            Exercises._2___Structural.Section_6___Adapter.Square square   = new Exercises._2___Structural.Section_6___Adapter.Square();
             square.Side     = 4;
 
             // Act
@@ -104,7 +106,7 @@ namespace Tests
         {
             // Arrange
             Triangle triangle = new Triangle(new RasterRenderer());
-          SharedLibrary.Exercises._2___Structural.Section_7___Bridge.Square square       = new SharedLibrary.Exercises._2___Structural.Section_7___Bridge.Square(new RasterRenderer());
+          Exercises._2___Structural.Section_7___Bridge.Square square       = new Exercises._2___Structural.Section_7___Bridge.Square(new RasterRenderer());
 
             // Assert
             Assert.Equal("Drawing Triangle as pixels", triangle.ToString());
@@ -116,7 +118,7 @@ namespace Tests
         {
             // Arrange
             Triangle triangle = new Triangle(new VectorRenderer());
-          SharedLibrary.Exercises._2___Structural.Section_7___Bridge.Square square       = new SharedLibrary.Exercises._2___Structural.Section_7___Bridge.Square(new VectorRenderer());
+          Exercises._2___Structural.Section_7___Bridge.Square square       = new Exercises._2___Structural.Section_7___Bridge.Square(new VectorRenderer());
 
             // Assert
             Assert.Equal("Drawing Triangle as lines", triangle.ToString());
@@ -131,7 +133,7 @@ namespace Tests
             SingleValue value1 = new SingleValue() { Value = 12 };
 
             ManyValues manyValues = new ManyValues();
-
+            
             // Act
             manyValues.Add(10);
             manyValues.Add(17);
@@ -140,6 +142,39 @@ namespace Tests
             // Assert
             Assert.Equal(36, manyValues.Sum());
             Assert.Equal(48, new List<IValueContainer> { value1, manyValues }.Sum());
+        }
+
+        // Decorator
+        [Theory]
+        [InlineData(1, "flying", "too young")]
+        [InlineData(10, "too old", "crawling")]
+        [InlineData(5, "flying", "crawling")]
+        public void AssertDecoratorTester(int age, string flyMsg, string crawlMsg)
+        {
+            // Arrange
+            Dragon dragon = new Dragon();
+
+            // Act
+            dragon.Age = age;
+
+            // Assert
+            Assert.Equal(flyMsg, dragon.Fly());
+            Assert.Equal(crawlMsg, dragon.Crawl());
+        }
+
+        // Façade
+        [Fact(Skip = "It takes too much time to run, but it works")]
+        public void AssertFaçadeTester()
+        {
+            // Arrange
+            MagicSquareGenerator façadeGenerator = new MagicSquareGenerator();
+            Verifier verifier = new Verifier();
+
+            // Act
+            List<List<int>> square = façadeGenerator.Generate(2);
+
+            // Assert
+            Assert.True(verifier.Verify(square));
         }
     }
 }

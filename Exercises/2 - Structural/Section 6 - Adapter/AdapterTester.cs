@@ -1,4 +1,6 @@
-﻿namespace SharedLibrary.Exercises._2___Structural.Section_6___Adapter
+﻿using Exercises;
+
+namespace Exercises._2___Structural.Section_6___Adapter
 {
     public class AdapterTester : BaseTester
     {

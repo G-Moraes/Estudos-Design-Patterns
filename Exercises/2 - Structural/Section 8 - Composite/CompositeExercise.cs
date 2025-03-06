@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace SharedLibrary.Exercises._2___Structural.Section_8___Composite
+namespace Exercises._2___Structural.Section_8___Composite
 {
     /*
     Consider the code presented below. The Sum() extension method adds up all the values in a list of IValueContainer elements it gets passed. We can have a single value or a set of values.
@@ -26,7 +26,7 @@ namespace SharedLibrary.Exercises._2___Structural.Section_8___Composite
             return GetEnumerator();
         }
     }
-
+    
     public class ManyValues : List<int>, IValueContainer
     {
 

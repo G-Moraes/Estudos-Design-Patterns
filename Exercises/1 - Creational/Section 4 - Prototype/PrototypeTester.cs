@@ -1,4 +1,6 @@
-﻿namespace SharedLibrary.Exercises._1___Creational.Section_4___Prototype
+﻿using Exercises;
+
+namespace Exercises._1___Creational.Section_4___Prototype
 {
     public class PrototypeTester : BaseTester
     { 

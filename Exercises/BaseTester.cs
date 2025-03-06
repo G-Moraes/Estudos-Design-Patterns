@@ -1,11 +1,12 @@
-﻿using SharedLibrary.Exercises._1___Creational.Section_2___Builder;
-using SharedLibrary.Exercises._1___Creational.Section_3___Factory;
-using SharedLibrary.Exercises._1___Creational.Section_4___Prototype;
-using SharedLibrary.Exercises._1___Creational.Section_5___Singleton;
-using SharedLibrary.Exercises._2___Structural.Section_6___Adapter;
-using SharedLibrary.Exercises._2___Structural.Section_7___Bridge;
+﻿using Exercises._1___Creational.Section_2___Builder;
+using Exercises._1___Creational.Section_3___Factory;
+using Exercises._1___Creational.Section_4___Prototype;
+using Exercises._1___Creational.Section_5___Singleton;
+using Exercises._2___Structural.Section_6___Adapter;
+using Exercises._2___Structural.Section_7___Bridge;
+using Exercises._2___Structural.Section_9___Decorator;
 
-namespace SharedLibrary
+namespace Exercises
 {
     public class BaseTester
     {
@@ -33,6 +34,11 @@ namespace SharedLibrary
                     break;
                 case 7:
                     tester = new BridgeTester();
+                    break;
+                case 8:
+                    throw new NotImplementedException();
+                case 9:
+                    tester = new DecoratorTester();
                     break;
                 default:
                     throw new NotImplementedException();

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace SharedLibrary.Exercises._1___Creational.Section_2___Builder
+namespace Exercises._1___Creational.Section_2___Builder
 {
     /*
 

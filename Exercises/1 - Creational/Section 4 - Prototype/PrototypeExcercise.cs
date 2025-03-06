@@ -1,4 +1,4 @@
-﻿namespace SharedLibrary.Exercises._1___Creational.Section_4___Prototype
+﻿namespace Exercises._1___Creational.Section_4___Prototype
 {
     /*
         Given the definitions above, you are asked to implement Line.DeepCopy() to perform a deep copy of the current Line  object.

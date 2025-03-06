@@ -1,4 +1,4 @@
-﻿namespace SharedLibrary.Exercises._2___Structural.Section_7___Bridge
+﻿namespace Exercises._2___Structural.Section_7___Bridge
 {
     /*
     You are given an example of an inheritance hierarchy which results in Cartesian-product duplication.Please refactor this hierarchy, giving the base class Shape a constructor that takes an interface IRenderer defined as

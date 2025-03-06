@@ -1,4 +1,6 @@
-﻿namespace SharedLibrary.Exercises._1___Creational.Section_5___Singleton
+﻿using Exercises;
+
+namespace Exercises._1___Creational.Section_5___Singleton
 {
     public class SingletonTester : BaseTester
     {

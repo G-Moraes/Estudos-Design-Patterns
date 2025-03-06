@@ -1,7 +1,7 @@
 ﻿using SharedLibrary.FileUtils;
 using SharedLibrary.TesterUtils;
 using SharedLibrary.JsonUtils;
-using SharedLibrary;
+using Exercises;
 
 public class Runner
 {
@@ -12,7 +12,7 @@ public class Runner
         if (String.IsNullOrEmpty(appSettingsString))
         {
             Console.WriteLine("Press any key before exit...");
-            Console.Read();
+            Console.ReadKey();
             return;
         }
 
@@ -21,7 +21,7 @@ public class Runner
         if(appSettingsObject == default(AppSettings))
         {
             Console.WriteLine("Press any key before exit...");
-            Console.Read();
+            Console.ReadKey();
             return;
         }
 
@@ -38,7 +38,7 @@ public class Runner
         }
 
         Console.WriteLine("Press any key before exit...");
-        Console.Read();
+        Console.ReadKey();
         return;
     }
 }
