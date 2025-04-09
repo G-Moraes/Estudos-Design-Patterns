@@ -5,6 +5,8 @@ using Exercises._1___Creational.Section_5___Singleton;
 using Exercises._2___Structural.Section_6___Adapter;
 using Exercises._2___Structural.Section_7___Bridge;
 using Exercises._2___Structural.Section_9___Decorator;
+using Exercises._3___Behavioral.Section_17___Mediator;
+using Exercises._3___Behavioral.Section_18___Memento;
 
 namespace Exercises
 {
@@ -39,6 +41,12 @@ namespace Exercises
                     throw new NotImplementedException();
                 case 9:
                     tester = new DecoratorTester();
+                    break;
+                case 17:
+                    tester = new MediatorTester();
+                    break;
+                case 18:
+                    tester = new MementoTester();
                     break;
                 default:
                     throw new NotImplementedException();
