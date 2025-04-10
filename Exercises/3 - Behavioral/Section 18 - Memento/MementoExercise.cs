@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Exercises._3___Behavioral.Section_18___Memento
+﻿namespace Exercises._3___Behavioral.Section_18___Memento
 {
     /*
     A TokenMachine is in charge of keeping tokens. Each Token is a reference type with a single numerical value. The machine supports adding tokens and, when it does, it returns a memento representing the state of that system at that given time.
